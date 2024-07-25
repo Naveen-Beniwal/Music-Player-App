@@ -1,16 +1,18 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
-import { songsData } from "./assets/assets";
 import Bigscreen from "./components/Bigscreen";
+import Registration from "./components/Registration"; // Updated import
+import { songsData } from "./assets/assets";
 
-function App() {
+function Home() {
   const [count, setCount] = useState(0);
   const [tracks, setTracks] = useState([]);
   const [keyword, setKeyword] = useState("");
 
   const getTracks = () => {
-    if (keyword == "") {
+    if (keyword === "") {
       setTracks(songsData);
     } else {
       const filteredTracks = songsData.filter(
@@ -23,12 +25,26 @@ function App() {
       console.log(filteredTracks);
     }
   };
+
   return (
     <>
       <Navbar getData={getTracks} keyword={keyword} setKeyword={setKeyword} />
       <Cards tracks={tracks} />
-      <Bigscreen></Bigscreen>
+      <Bigscreen />
     </>
+  );
+}
+
+function App() {
+  return (
+    <Router basename="/Music-Player-App">
+      {" "}
+      {/* Set basename to match GitHub Pages subdirectory */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Registration />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,60 +1,77 @@
-body{
-    background-color: orange;
+/* Apply background color only to the container div */
+body {
+    margin: 0;
+    /* Remove default margin */
 }
-.container{
+
+.total {
+    background-color: orange;
+    /* Set background color for the main container */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensure full viewport height */
+}
+
+.container {
     border: 2px solid black;
     border-top-left-radius: 90px;
     border-bottom-left-radius: 90px;
     border-top-right-radius: 2px;
     margin: auto;
     margin-right: 100px;
-    /* align-self: center; */
     width: 500px;
     height: 400px;
     background-color: rgb(250, 241, 241);
     font-size: larger;
+    padding: 20px;
+    /* Add padding for spacing */
 }
-div{
+
+div {
     text-align: center;
-    background-color: orange;
 }
-p{
+
+p {
     font-size: 25px;
 }
-.ic{
+
+.ic {
     margin-top: 70px;
     width: 300px;
 }
-.ic img{
+
+.ic img {
     width: 100px;
     height: 100px;
     margin-left: 0;
-    
 }
-.total{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-}
-.okk h2{
 
-    display: flex;
-    
-}
-.okk{
+.okk {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* Center align items */
 }
-.reg{
+
+.okk h2 {
+    margin: 0;
+    /* Remove default margin */
+}
+
+.reg {
     display: flex;
 }
-#bttn{
+
+#bttn {
     height: 4vh;
     width: 5vw;
     border-radius: 0.1rem;
 }
-input{
+
+input {
     height: 4vh;
     width: 20vw;
     border-radius: 0.3rem;
