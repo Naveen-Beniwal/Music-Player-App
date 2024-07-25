@@ -54,9 +54,10 @@ import msbg2 from "./msbg2.jpg";
 import msbg3 from "./msbg3.jpg";
 import msbg4 from "./msbg4.jpg";
 import bgs4 from "./bigscreen4.jpg";
-
+import img from "./img.png";
 export const assets = {
   bgs2,
+  img,
   msbg1,
   msbg2,
   msbg3,

@@ -1,7 +1,7 @@
 // src/components/Register.jsx
 import React from "react";
 import style from "./Registration.module.css"; // Import the CSS file
-
+import { assets } from "../assets/assets";
 const Register = () => {
   return (
     <div className={style.total}>
@@ -32,7 +32,7 @@ const Register = () => {
         </div>
       </div>
       <div className="okk">
-        <img src="img.png" alt="error" className="ic" />
+        <img src={assets.img} alt="error" className="ic" />
         <div>
           <h2>Join us</h2>
         </div>

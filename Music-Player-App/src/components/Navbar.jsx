@@ -11,7 +11,7 @@ const Navbar = ({ getData, keyword, setKeyword }) => {
       <div className="container-fluid">
         <div className="d-flex justify-content-center align-items-center w-100">
           <ul className="navbar-nav d-flex align-items-center me-3">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 className="nav-link active text-white"
                 aria-current="page"
@@ -19,7 +19,7 @@ const Navbar = ({ getData, keyword, setKeyword }) => {
               >
                 Home
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link className="nav-link text-white" to="/register">
                 Register
