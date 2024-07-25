@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import { songsData } from "./assets/assets";
-
+import Bigscreen from "./components/Bigscreen";
 function App() {
   const [count, setCount] = useState(0);
   const [tracks, setTracks] = useState([]);
@@ -13,7 +13,7 @@ function App() {
       setTracks(songsData);
     } else {
       const filteredTracks = songsData.filter(
-        (song) => song.name.toLowerCase() === keyword
+        (song) => song.name.toLowerCase() === keyword.toLowerCase()
       );
 
       setTracks(filteredTracks);
@@ -26,6 +26,7 @@ function App() {
     <>
       <Navbar getData={getTracks} keyword={keyword} setKeyword={setKeyword} />
       <Cards tracks={tracks} />
+      <Bigscreen></Bigscreen>
     </>
   );
 }

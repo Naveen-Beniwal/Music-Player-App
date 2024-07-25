@@ -45,7 +45,18 @@ import Angreji from "./Angreji-Beat.mp3";
 import angrejibeat from "./angreji.jpeg";
 import daakusong from "./Daaku.mp3";
 import daakuimg from "./daaku.jpeg";
+import bgs1 from "./bigscreen1.jpg";
+import bgs3 from "./bigscreen3.jpg";
+import bgs5 from "./bigscreen5.jpg";
+import bgs2 from "./bigscreen2.jpg";
+
+import bgs4 from "./bigscreen4.jpg";
 export const assets = {
+  bgs2,
+  bgs1,
+  bgs3,
+  bgs5,
+  bgs4,
   bell_icon,
   home_icon,
   like_icon,
