@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import { songsData } from "./assets/assets";
 import Bigscreen from "./components/Bigscreen";
+
 function App() {
   const [count, setCount] = useState(0);
   const [tracks, setTracks] = useState([]);

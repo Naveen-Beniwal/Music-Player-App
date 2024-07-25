@@ -1,0 +1,61 @@
+body{
+    background-color: orange;
+}
+.container{
+    border: 2px solid black;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: 2px;
+    margin: auto;
+    margin-right: 100px;
+    /* align-self: center; */
+    width: 500px;
+    height: 400px;
+    background-color: rgb(250, 241, 241);
+    font-size: larger;
+}
+div{
+    text-align: center;
+    background-color: orange;
+}
+p{
+    font-size: 25px;
+}
+.ic{
+    margin-top: 70px;
+    width: 300px;
+}
+.ic img{
+    width: 100px;
+    height: 100px;
+    margin-left: 0;
+    
+}
+.total{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.okk h2{
+
+    display: flex;
+    
+}
+.okk{
+    display: flex;
+    flex-direction: column;
+}
+.reg{
+    display: flex;
+}
+#bttn{
+    height: 4vh;
+    width: 5vw;
+    border-radius: 0.1rem;
+}
+input{
+    height: 4vh;
+    width: 20vw;
+    border-radius: 0.3rem;
+}

@@ -49,10 +49,18 @@ import bgs1 from "./bigscreen1.jpg";
 import bgs3 from "./bigscreen3.jpg";
 import bgs5 from "./bigscreen5.jpg";
 import bgs2 from "./bigscreen2.jpg";
-
+import msbg1 from "./musicbg.avif";
+import msbg2 from "./msbg2.jpg";
+import msbg3 from "./msbg3.jpg";
+import msbg4 from "./msbg4.jpg";
 import bgs4 from "./bigscreen4.jpg";
+
 export const assets = {
   bgs2,
+  msbg1,
+  msbg2,
+  msbg3,
+  msbg4,
   bgs1,
   bgs3,
   bgs5,
