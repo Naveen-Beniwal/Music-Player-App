@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ getData, keyword, setKeyword }) => {
+  const handleEnter = (eenter) => {
+    if (eenter.key == "Enter") {
+      getData();
+    }
+  };
   const handleInput = (event) => {
     setKeyword(event.target.value);
   };
+
+  useEffect(() => {
+    console.log(keyword);
+  }, [keyword]);
 
   return (
     <nav className="navbar navbar-expand-lg bg-black text-white">
@@ -30,6 +39,7 @@ const Navbar = ({ getData, keyword, setKeyword }) => {
           <input
             onChange={handleInput}
             value={keyword}
+            onKeyDown={handleEnter}
             className="form-control me-2"
             type="search"
             placeholder="Search"

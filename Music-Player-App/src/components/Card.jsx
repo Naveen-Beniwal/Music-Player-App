@@ -13,7 +13,6 @@ const Card = ({ element, id, carouselImage }) => {
     setIsCarouselVisible(false);
   };
 
-  // Default empty array if carouselImages is not provided
   const carouselImages = [carouselImage] || [];
 
   return (
