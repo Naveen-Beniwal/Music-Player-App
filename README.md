@@ -82,5 +82,5 @@ This project represents:
 ```Naveen-Beniwal
 Email: naveenbeniwal00001@gmail.com
 Built while learning React & Bootstrap
-Last Updated: 2024-01-26 19:49:34 UTC```
+
 ```
